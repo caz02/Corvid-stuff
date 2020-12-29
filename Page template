@@ -1,0 +1,212 @@
+export function button_click(event) {
+	// Add your code for this event here: 
+  $w("#image6").show('SlideIn');
+   $w("#text74").show('SlideIn');
+  if($w("#uploadButton1").value.length > 0) {
+    $w("#text1").text = "Loading " + $w("#uploadButton1").value[0];
+    $w("#uploadButton1").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text1").text = "success";
+        $w("#image2").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text1").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text1").text = "Please choose file";
+  }
+}
+
+export function button2_click(event) {
+	// Add your code for this event here: 
+  $w("#image6").show('SlideIn');
+$w("#text74").show('SlideIn');
+  if($w("#uploadButton2").value.length > 0) {
+    $w("#text2").text = "Loading " + $w("#uploadButton2").value[0];
+    $w("#uploadButton2").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text2").text = "success";
+        $w("#image4").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text2").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text2").text = "Please choose file";
+  }
+}
+
+
+export function button3_click(event) {
+	// Add your code for this event here:
+  $w("#image6").show('SlideIn'); 
+$w("#text74").show('SlideIn');
+  if($w("#uploadButton3").value.length > 0) {
+    $w("#text3").text = "Loading " + $w("#uploadButton3").value[0];
+    $w("#uploadButton3").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text3").text = "success";
+        $w("#image3").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text3").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text3").text = "Please choose file";
+  }
+}
+
+
+
+export function button4_click(event) {
+	// Add your code for this event here:
+  $w("#image6").show('SlideIn'); 
+$w("#text74").show('SlideIn');
+  if($w("#uploadButton4").value.length > 0) {
+    $w("#text4").text = "Loading " + $w("#uploadButton4").value[0];
+    $w("#uploadButton4").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text4").text = "success";
+        $w("#image5").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text4").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text4").text = "Please choose file";
+  }
+}
+
+
+export function button5_click(event) {
+	// Add your code for this event here: 
+
+  if($w("#uploadButton5").value.length > 0) {
+    $w("#text5").text = "Loading Your Pretty Image";
+    $w("#uploadButton5").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text5").text = "success";
+        $w("#image7").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text5").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text5").text = "Please choose file";
+  }
+}
+
+
+
+export function button7_click(event) {	// Add your code for this event here: 
+
+  if($w("#uploadButton6").value.length > 0) {
+    $w("#text6").text = "Loading Your Pretty Image";
+    $w("#uploadButton6").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text6").text = "success";
+        $w("#image12").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text6").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text6").text = "Please choose file";
+  }
+}
+
+
+export function button8_click(event) {
+  // Add your code for this event here: 
+
+  if($w("#uploadButton7").value.length > 0) {
+    $w("#text7").text = "Loading Your Pretty Image";
+    $w("#uploadButton7").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text7").text = "success";
+        $w("#image9").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text7").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text7").text = "Please choose file";
+  }
+}
+	
+
+export function button9_click(event) {
+  // Add your code for this event here: 
+
+  if($w("#uploadButton8").value.length > 0) {
+    $w("#text8").text = "Loading Your Pretty Image";
+    $w("#uploadButton8").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text8").text = "success";
+        $w("#image10").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text8").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text8").text = "Please choose file";
+  }
+}
+
+
+
+export function button10_click(event) {
+  // Add your code for this event here: 
+
+  if($w("#uploadButton9").value.length > 0) {
+    $w("#text9").text = "Loading Your Pretty Image";
+    $w("#uploadButton9").startUpload()
+      .then( (uploadedFile) => {
+        $w("#text9").text = "success";
+        $w("#image11").src = uploadedFile.url;
+      })
+      .catch( (uploadError) => {
+        $w("#text9").text = "error";
+        console.log("error: " + uploadError.errorCode);
+        console.log(uploadError.errorDescription);
+      });
+  } 
+  else {
+    $w("#text9").text = "Please choose file";
+  }
+}
+
+
+
+export function button1_click(event) {
+	// This function was added from the Properties & Events panel. To learn more, visit http://wix.to/UcBnC-4
+	// Add your code for this event here: 
+ ($w("#button1").hide("fade"))
+ $w("#image13").show()
+ $w("#text112").show("FadeIn");
+setTimeout(() => {$w("#image13").hide("FadeOut"); }, 7000);
+ setTimeout(() => {$w("#text112").hide("FadeOut"); }, 9000);
